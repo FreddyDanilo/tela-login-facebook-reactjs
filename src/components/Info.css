@@ -1,0 +1,21 @@
+.info-container {
+  width: 55%;
+}
+
+.info-container > h2 {
+  font-size: 28px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 720px) {
+  .info-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,106 @@
+.form-container {
+  width: 42%;
+  max-width: 396px;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+
+.form-container > form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.form-container > form > input {
+  width: 100%;
+  font-size: 16px;
+  padding: 16px;
+  color: rgba(0, 0, 0, 1);
+  border-radius: 8px;
+  border: 1px solid rgba(200, 200, 200, 1);
+  outline: 0;
+  box-shadow: 0 0 2px 2px rgba(30, 143, 255, 0);
+  transition: 0.5s;
+}
+
+.form-container > form > input:focus {
+  border: 1px solid rgba(30, 143, 255, 1);
+  box-shadow: 0 0 2px 2px rgba(30, 143, 255, 0.507);
+}
+
+.form-container > form > .login {
+  width: 100%;
+  background-color: rgba(30, 143, 255, 1);
+  color: white;
+  font-weight: bold;
+  border: 0;
+  padding: 14px 0;
+  border-radius: 8px;
+  outline: 0;
+  transition: 0.5s;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-container > form > .login:hover {
+  background-color: rgb(24, 120, 216);
+}
+
+.form-container > form > a {
+  width: 100%;
+  text-align: center;
+  color: rgb(24, 120, 216);
+  text-decoration: none;
+}
+
+.form-container > form > a:hover {
+  text-decoration: underline;
+}
+
+.form-container > form > .separator {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(200, 200, 200, 1);
+}
+
+.form-container > form > .new-account {
+  background-color: #42b72a;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  padding: 14px;
+  border-radius: 8px;
+  outline: 0;
+  transition: 0.5s;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.form-container > span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.form-container > span > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+.form-container > span > a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width: 720px) {
+  .form-container {
+    width: 100%;
+    max-width: none;
+  }
+}
